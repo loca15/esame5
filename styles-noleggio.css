@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    max-width: 100%;
+}
+
+body {
+    font-family: avenir;
+    font-style: normal;
+    margin: auto;
+    background-color: black;
+}
+header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+
+#logo{
+ padding: 0px;
+}
+
+nav a {
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+    padding: 0pt;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 30pt;
+}
+
+.rect{
+    background-color: #FF611E;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 40px;
+ }
+
+ .rect h3 {
+    padding-top: 6px;
+ }
+
+ .testo {
+    display: flex;
+    margin: auto;
+    margin-top: 80px;
+    width: 90%;
+    padding: 30px;
+    gap: 80px;
+ }
+ .testo h3 {
+    color: #FF611E;
+    font-family:Dela Gothic One ;
+    font-size: 18pt;
+    margin-bottom: 20px;
+ }
+ 
+ .testo p {
+ color: white;
+ justify-content: ;
+ }
+ 
+ .paragrafo ul li{
+    padding: 10px;
+    color: white;
+    }
+ .grid {
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 50px;
+    margin-top: 90px;
+    column-gap: 10px;
+}
+
+@media (max-width:600px) {
+    .grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

@@ -1,0 +1,214 @@
+*{
+    margin: auto;
+    max-width: 100%;
+}
+
+body {
+    font-family: avenir;
+    font-style: normal;
+    margin: auto;
+    background-color: black;
+}
+header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+#logo{
+ padding: 0px;
+}
+
+nav a {
+    color: white;
+}
+
+.foto a {
+    color: #FF611E;
+    text-decoration: underline;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+    padding: 0pt;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 30pt;
+}
+
+.rect{
+    background-color: #FF611E;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    width: 100%;
+    height: 40px;
+ }
+
+ .rect h3 {
+    padding-top: 6px;
+ }
+
+p {
+   font-family: avenir;
+   color: white;
+}
+
+.testo {
+    width: 50%;
+    padding-top: 80px;
+    padding-left: 50px;
+}
+.testo span {
+    text-decoration: underline;
+}
+
+.sezione1 .paragrafo{
+margin-top: 30px;
+
+}
+.paragrafo{
+    width: 40%;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    padding-left: 50px;
+    padding-right: 50px
+    
+}
+.paragrafo p{
+    padding-bottom: 30px;
+}
+.paragrafo span{
+    font-weight: bold;
+}
+.paragrafo ul li{
+padding: 10px;
+color: white;
+}
+
+.sezione1 {
+    display: flex;
+ }
+
+.img {
+    padding-top: 20px;
+    width: 70%;
+}
+
+.sezione2 {
+    display: flex;
+}
+.sezione2 p {
+    margin-top: 200px;
+    margin-bottom: 25px;
+
+}
+.sezione2 a {
+    color: white;
+    height: 60px;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #FF611E;
+    margin-top: 350px;
+    justify-content: center;
+    font-weight: bold;
+
+}
+
+
+.sezione2 p span {
+    font-weight: bold;
+}
+
+.grid {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 50px;
+    margin-top: 90px;
+    column-gap: 16px;
+}
+
+.gallery{
+column-count: 3;
+column-gap: 16px;
+}
+
+.gallery img {
+margin-bottom: 16px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 20%;
+    padding: 20pt;
+    font-size: 12pt;
+}
+
+footer p {
+text-align: center;
+font-size: 8pt;
+}
+
+
+@media (max-width:600px) {
+    .grid {
+        column-count: 1;
+    }
+    }
+
+    @media only screen and (max-width: 1000px) {
+
+        section.cosaoffriamo p {
+            max-width: 600px;
+            text-align: center;
+            padding: 0 20px;
+        }
+        .flex-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .colonnadestra6 img {
+            max-width: 100%;
+            margin: 0;
+            margin-top: 20px;
+        }
+        footer {
+            display: flex;
+            justify-content: center;
+            color: white;
+            margin-top: 100px;
+            /* padding: 20pt; */
+            font-size: 18px;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            /* align-content: center; */
+            align-items: center;
+        }
+        .footericon {
+            display: flex;
+            justify-content: center;
+            padding: 40px 0;
+        }
+        .footericon img {
+            margin: 0 10px;
+        }
+    
+      }

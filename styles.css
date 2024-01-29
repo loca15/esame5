@@ -1,0 +1,226 @@
+*{
+    margin: 0;
+    max-width: 100%;
+}
+
+body {
+    font-family: avenir;
+    font-style: normal;
+    background-color: black;
+}
+
+header {
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12pt;
+    padding: 0px;
+    position: fixed;
+    width: 100%;
+}
+
+#logo{
+ padding: 0px;
+ size: 20%;
+}
+
+.home a{
+    color: #FF611E;
+}
+
+.home {
+    text-decoration-line: underline;
+    color: #FF611E;
+}
+
+nav a {
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 30pt;
+
+}
+
+
+.rettangolo {
+    background-color:#FF611E;
+    font-size: 14pt;
+    margin-top: 100px;
+    padding: 30px 20px 40px 20px;
+}
+.rettangolo a {
+    padding: 0px 10px;
+    border: solid 2px white;
+}
+.rettangolo h1{
+    align-items: center;
+    font-family:Dela Gothic One ;
+    margin-bottom: 20pt;
+    font-size: 20pt;
+}
+
+.contenitore {
+    display: flex; 
+    align-items: center;
+}
+
+section.body {
+    
+}
+
+.flex-container {
+    display: flex;
+    /*align-items: stretch;*/
+  }
+
+.colonnadestra6 {
+    flex-grow: 6
+}
+.colonnadestra6 img {
+    margin: 150px 0px 0px 65px;
+}
+
+.colonnasinistra4 {
+    flex-grow: 4
+}
+
+.rettangolo p {
+        padding: 20px 0 30px 0px;
+}
+
+.rettangolo a {
+    padding: 10px 15px;
+    border: solid 2px white;
+    margin-top: 20px;
+}
+
+.lostudio h2 {
+    font-family:Dela Gothic One ;
+    font-size: 18pt;
+}
+.lostudio  {
+    margin: 100px 20px 20px 20px;
+    
+}
+
+.colonnadestra6 img {
+    max-width: 600px;
+    margin: 200px 0 0 200px 
+
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 10px;
+    color: white;
+}
+
+.grid p {
+    margin: 30px;
+    font-family:Dela Gothic One ;
+    font-size: large;
+    text-align: center;
+}
+.grid a {
+    text-decoration: none;
+}
+
+
+.cosaoffriamo h2 {
+    color: #FF611E;
+    font-family:Dela Gothic One ;
+    font-size: 18pt;
+}
+.cosaoffriamo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    flex-direction: column;
+}
+
+section.cosaoffriamo p {
+    max-width: 600px;
+}
+
+
+section h1, section h2 {
+    color: white;
+}
+
+section p {
+    color:white;
+
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    color: white;
+    margin-top: 20%;
+    padding: 20pt;
+    font-size: 12pt;
+}
+
+footer p {
+text-align: center;
+font-size: 8pt;
+}
+footer a {
+    color: white;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+
+    section.cosaoffriamo p {
+        max-width: 600px;
+        text-align: center;
+        padding: 0 20px;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+    }
+    .colonnadestra6 img {
+        max-width: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        color: white;
+        margin-top: 100px;
+        /* padding: 20pt; */
+        font-size: 18px;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        /* align-content: center; */
+        align-items: center;
+    }
+    .footericon {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0;
+    }
+    .footericon img {
+        margin: 0 10px;
+    }
+
+  }
